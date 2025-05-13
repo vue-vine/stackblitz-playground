@@ -26,7 +26,7 @@
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.6.3",
-    "vite": "^6.0.0",
+    "vite": "^6.3.5",
     "vue-vine": "^0.2.5",
     "vue-vine-tsc": "^0.1.5"
   }

@@ -1,4 +1,3 @@
-import { ref } from 'vue'
 import { useCounterStore } from '../stores/counter'
 
 interface CounterProps {

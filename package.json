@@ -30,5 +30,10 @@
     "vite": "^6.3.5",
     "vue-vine": "^0.5.2",
     "vue-vine-tsc": "^0.1.5"
-  }
+  },
+  "onlyBuiltDependencies": [
+    "@tailwindcss/oxide",
+    "esbuild",
+    "unrs-resolver"
+  ]
 }

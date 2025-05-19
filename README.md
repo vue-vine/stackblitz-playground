@@ -1,3 +1,6 @@
+> [!INFO]
+> Open this project on [Stackblitz](https://stackblitz.com/~/github.com/vue-vine/stackblitz-playground)
+
 # Vue Vine App
 
 This project was generated with [create-vue-vine](https://github.com/vue-vine/vue-vine/tree/main/packages/create-vue-vine).

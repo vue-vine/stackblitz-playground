@@ -26,8 +26,8 @@ devDependencies:
     specifier: ^22.15.19
     version: 22.15.19
   '@vue-vine/eslint-config':
-    specifier: ^1.0.0
-    version: 1.0.0(typescript@5.8.3)
+    specifier: ^1.1.0
+    version: 1.1.0(typescript@5.8.3)
   eslint:
     specifier: ^9.27.0
     version: 9.27.0
@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^6.3.5
     version: 6.3.5(@types/node@22.15.19)
   vue-vine:
-    specifier: ^0.5.2
-    version: 0.5.3(vue@3.5.14)
+    specifier: ^1.2.1
+    version: 1.2.1(vue@3.5.14)
   vue-vine-tsc:
     specifier: ^0.1.5
     version: 0.1.9(typescript@5.8.3)
@@ -1027,7 +1027,7 @@ packages:
 
   /@tailwindcss/oxide@4.1.7:
     resolution: {integrity: sha512-5SF95Ctm9DFiUyjUPnDGkoKItPX/k+xifcQhcqX5RA85m50jw1pT/KzjdvlqxRja45Y52nR4MR9fD1JYd7f8NQ==}
-    engines: {node: '>= 10'}
+    engines: {node: '>=14.0.0'}
     dependencies:
       detect-libc: 2.0.4
       tar: 7.4.3
@@ -1045,6 +1045,13 @@ packages:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.7
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.7
     dev: true
+    bundledDependencies:
+      - '@napi-rs/wasm-runtime'
+      - '@emnapi/core'
+      - '@emnapi/runtime'
+      - '@tybys/wasm-util'
+      - '@emnapi/wasi-threads'
+      - tslib
 
   /@tailwindcss/vite@4.1.7(vite@6.3.5):
     resolution: {integrity: sha512-tYa2fO3zDe41I7WqijyVbRd8oWT0aEID1Eokz5hMT6wShLIHj3yvwj9XbfuloHP9glZ6H+aG2AN/+ZrxJ1Y5RQ==}
@@ -1512,8 +1519,8 @@ packages:
       typescript: 5.6.3
     dev: true
 
-  /@vue-vine/compiler@0.5.3:
-    resolution: {integrity: sha512-l2eksXH2KRJR4ZneAcs80S6M6Ipp2y0H3l2xpfdgPg3Lx2SqqEi1th/5KL2IfK/vYD/5X2cvX3GqQw/hgj0BjQ==}
+  /@vue-vine/compiler@1.2.1:
+    resolution: {integrity: sha512-OdHVeQdEOQl8gCW73Ile4aJLgv8udagBoQ9CKbbdg3JthGGaLHazUu0LqV512Wt1Jds797owbXZWa4jcLW9ueg==}
     dependencies:
       '@babel/parser': 7.27.2
       '@babel/types': 7.27.1
@@ -1531,10 +1538,10 @@ packages:
       ts-morph: 25.0.1
     dev: true
 
-  /@vue-vine/eslint-config@1.0.0(typescript@5.8.3):
-    resolution: {integrity: sha512-mHeDK2U5YQA64wCol/8gWjF+kwjCW2JW+veAZvu5g9h64zyGV1f5XxLnGzs6itb3GzstMXzILCnBvz2jJmLk8Q==}
+  /@vue-vine/eslint-config@1.1.0(typescript@5.8.3):
+    resolution: {integrity: sha512-cQrZnv26dgleD5CvineC7dTvflymiSrrIwxPGjKZ2I4DO3NPq7psnCmmLhAzx+HhfjX25Sv8u4UlBJgcqcXuJw==}
     dependencies:
-      '@vue-vine/eslint-plugin': 1.0.0(eslint@9.25.1)(typescript@5.8.3)
+      '@vue-vine/eslint-plugin': 1.1.0(eslint@9.25.1)(typescript@5.8.3)
       eslint: 9.25.1
     transitivePeerDependencies:
       - jiti
@@ -1542,8 +1549,8 @@ packages:
       - typescript
     dev: true
 
-  /@vue-vine/eslint-parser@1.0.0(eslint@9.25.1)(typescript@5.8.3):
-    resolution: {integrity: sha512-Nlw8RFcRxWEL47X/DBENgW27I7DIQY17Hbm2cKI1EsmVpLToVFnBekc3nXsaKuzZBURb4421O0Vj6EJ12QQAfw==}
+  /@vue-vine/eslint-parser@1.1.0(eslint@9.25.1)(typescript@5.8.3):
+    resolution: {integrity: sha512-uK9hjUzAiIlSVsuetY+QXhe7OPmeZyYKMdisMmK8WJi1+HdKTL8T5NMtVCpwLYP3jr8vt0GoysQ0IpVMxxih6A==}
     dependencies:
       '@typescript-eslint/parser': 8.31.1(eslint@9.25.1)(typescript@5.8.3)
       '@typescript-eslint/scope-manager': 8.31.1
@@ -1559,11 +1566,11 @@ packages:
       - typescript
     dev: true
 
-  /@vue-vine/eslint-plugin@1.0.0(eslint@9.25.1)(typescript@5.8.3):
-    resolution: {integrity: sha512-sLriyggcPT+TyLDzDsyZl0G7RQ/30FwAFACULHVgpyZKfMhZxIkTZz2eR+zs1RBFpS0QV92E0R8BejjoYEmOjQ==}
+  /@vue-vine/eslint-plugin@1.1.0(eslint@9.25.1)(typescript@5.8.3):
+    resolution: {integrity: sha512-7X0vYZD025X/v2nv3qjhFMOMZ/t/kdR16jqNb6e2wX7pQy1yzDrjpNu3sNX65SVmXjaWJaS/FHkcgLC0ZSptiw==}
     dependencies:
       '@antfu/utils': 0.7.10
-      '@vue-vine/eslint-parser': 1.0.0(eslint@9.25.1)(typescript@5.8.3)
+      '@vue-vine/eslint-parser': 1.1.0(eslint@9.25.1)(typescript@5.8.3)
       prettier: 3.5.3
       prettier-linter-helpers: 1.0.0
       synckit: 0.9.2
@@ -1586,10 +1593,10 @@ packages:
       - typescript
     dev: true
 
-  /@vue-vine/vite-plugin@0.5.3:
-    resolution: {integrity: sha512-fSAMDsmo6VcvbRceZSEd2pY5LC9dEPal9PCwcj74w/n+htpZ7W0wcmwXpxut9IH73Kv3TZ3IWc6OUHrOybpqXg==}
+  /@vue-vine/vite-plugin@1.2.1:
+    resolution: {integrity: sha512-GX0xAKy/iyC3DuL+oxDwPiEAxIp6JEPWThgsrDnt4CFLpzKShwbe0X5pp2u0Sm8qFTWSGjivJI2TJOPpIRFeFA==}
     dependencies:
-      '@vue-vine/compiler': 0.5.3
+      '@vue-vine/compiler': 1.2.1
     dev: true
 
   /@vue/compiler-core@3.5.14:
@@ -3510,6 +3517,8 @@ packages:
       lightningcss-win32-arm64-msvc: 1.30.1
       lightningcss-win32-x64-msvc: 1.30.1
     dev: true
+    bundledDependencies:
+      - napi-wasm
 
   /line-column@1.0.2:
     resolution: {integrity: sha512-Ktrjk5noGYlHsVnYWh62FLVs4hTb8A3e+vucNZMgPeAOITdshMSgv4cCZQeRDjm7+goqmo6+liZwTXo+U3sVww==}
@@ -5236,12 +5245,12 @@ packages:
       - typescript
     dev: true
 
-  /vue-vine@0.5.3(vue@3.5.14):
-    resolution: {integrity: sha512-PbuSUe7w0pOT+Bi6T0p9PuFgZVjOQMmxYsn7g9IC+YeP9q9MB4cT+5iDJpjR9F39f821QnkXTL8uLEjaW/K6/Q==}
+  /vue-vine@1.2.1(vue@3.5.14):
+    resolution: {integrity: sha512-Y1VcwEE9K+CxqOeCk9ApHspuBJoXVubGdwVHT7/rZUsAttQQErg6qBY2HXnbuock7YoreQ4EVTWHCdSRUvXQGw==}
     peerDependencies:
       vue: '>=3.2'
     dependencies:
-      '@vue-vine/vite-plugin': 0.5.3
+      '@vue-vine/vite-plugin': 1.2.1
       vue: 3.5.14(typescript@5.8.3)
     dev: true
 

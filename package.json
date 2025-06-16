@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.9.2",
-    "@tailwindcss/vite": "^4.1.7",
+    "@tailwindcss/vite": "^4.1.10",
     "@types/node": "^22.15.19",
     "@vue-vine/eslint-config": "^1.1.0",
     "eslint": "^9.27.0",

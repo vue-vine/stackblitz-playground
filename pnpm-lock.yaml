@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^4.1.14
     version: 4.1.14(vite@6.3.5)
   '@types/node':
-    specifier: ^22.15.19
-    version: 22.15.19
+    specifier: ^24.9.1
+    version: 24.9.1
   '@vue-vine/eslint-config':
     specifier: ^1.1.0
     version: 1.1.0(typescript@5.8.3)
@@ -42,7 +42,7 @@ devDependencies:
     version: 5.8.3
   vite:
     specifier: ^6.3.5
-    version: 6.3.5(@types/node@22.15.19)
+    version: 6.3.5(@types/node@24.9.1)
   vue-vine:
     specifier: ^1.2.1
     version: 1.2.1(vue@3.5.22)
@@ -1062,7 +1062,7 @@ packages:
       '@tailwindcss/node': 4.1.14
       '@tailwindcss/oxide': 4.1.14
       tailwindcss: 4.1.14
-      vite: 6.3.5(@types/node@22.15.19)
+      vite: 6.3.5(@types/node@24.9.1)
     dev: true
 
   /@ts-morph/common@0.26.1:
@@ -1101,10 +1101,10 @@ packages:
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
     dev: true
 
-  /@types/node@22.15.19:
-    resolution: {integrity: sha512-3vMNr4TzNQyjHcRZadojpRaD9Ofr6LsonZAoQ+HMUa/9ORTPoxVIw0e0mpqWpdjj8xybyCM+oKOUH2vwFu/oEw==}
+  /@types/node@24.9.1:
+    resolution: {integrity: sha512-QoiaXANRkSXK6p0Duvt56W208du4P9Uye9hWLWgGMDTEoKPhuenzNcC4vGUmrNkiOKTlIrBoyNQYNpSwfEZXSg==}
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 7.16.0
     dev: true
 
   /@types/unist@3.0.3:
@@ -4913,8 +4913,8 @@ packages:
       which-boxed-primitive: 1.1.1
     dev: true
 
-  /undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  /undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
     dev: true
 
   /unist-util-is@6.0.1:
@@ -4972,7 +4972,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@6.3.5(@types/node@22.15.19):
+  /vite@6.3.5(@types/node@24.9.1):
     resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
@@ -5012,7 +5012,7 @@ packages:
       yaml:
         optional: true
     dependencies:
-      '@types/node': 22.15.19
+      '@types/node': 24.9.1
       esbuild: 0.25.4
       fdir: 6.4.4(picomatch@4.0.2)
       picomatch: 4.0.2

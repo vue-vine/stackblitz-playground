@@ -28,8 +28,8 @@
     "tailwindcss": "^4.1.16",
     "typescript": "^5.9.3",
     "vite": "^7.1.12",
-    "vue-vine": "^1.7.20",
-    "vue-vine-tsc": "^1.7.20"
+    "vue-vine": "^1.7.27",
+    "vue-vine-tsc": "^1.7.27"
   },
   "onlyBuiltDependencies": [
     "@tailwindcss/oxide",

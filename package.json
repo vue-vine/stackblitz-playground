@@ -15,19 +15,19 @@
   },
   "dependencies": {
     "pinia": "^4.0.3",
-    "vue": "^3.5.41",
-    "vue-router": "^5.2.0"
+    "vue": "^3.5.42",
+    "vue-router": "^5.3.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^9.3.0",
+    "@antfu/eslint-config": "^9.5.1",
     "@tailwindcss/vite": "^4.1.16",
     "@types/node": "^26.2.0",
     "@vue-vine/eslint-config": "^1.1.11",
-    "eslint": "^10.8.1",
+    "eslint": "^10.9.1",
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^4.1.16",
     "typescript": "^6.0.3",
-    "vite": "^8.2.1",
+    "vite": "^8.2.2",
     "vue-vine": "^1.7.27",
     "vue-vine-tsc": "^1.7.27"
   },
